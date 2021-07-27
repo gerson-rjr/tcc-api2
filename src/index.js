@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 require('./controllers/authController')(app);
+require('./controllers/licitacaoController')(app);
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)

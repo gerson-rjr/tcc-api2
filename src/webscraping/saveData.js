@@ -1,4 +1,4 @@
-const scrapSchema = require('./scrap')
+const scrapSchema = require('..models/scrap')
 const mongoose = require('../database/index')
 const extraiDados = require('./webScraping')
 
@@ -36,4 +36,5 @@ async function salvarDados() {
 
 
 }
+module.exports = tbscrap;
 salvarDados();

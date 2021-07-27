@@ -10,4 +10,5 @@ const scrapSchema = mongoose.Schema({
     valor: String
 });
 
-module.exports = scrapSchema;
+const Scrap = mongoose.model('tbscrap', scrapSchema)
+module.exports = Scrap;
